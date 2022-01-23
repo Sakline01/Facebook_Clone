@@ -9,12 +9,14 @@
 .navLeft{
     width:20%;
     height:100%;
-    border-right: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 1%;
 }
 .navMiddle{
     width:60%;
     height:100%;
-    border-right: 1px solid blue;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -25,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    cursor: pointer;
 }
 .navIconColor{
     fill:gray;
@@ -32,9 +35,13 @@
 .navActiveIconColor{
     fill:blue;
 }
-.navMiddle>div:hover{
+.active{
     height:90%;
     border-bottom: 4px solid blue;
+}
+.navMiddle>div:hover{
+    height:90%;
+    /* border-bottom: 4px solid blue; */
     background-color:#f0f2f5;
     border-radius: 5px;
 }
@@ -49,10 +56,25 @@
 }
 .navRight>div{
     width:11%;
+    min-width: 42px;
     height:100%;
+    min-height: 39px;
+    margin-right: 3%;
     background-color:#f0f2f5;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content:center;
+    cursor: pointer;
+}
+.navRight>div:nth-child(1){
+    width:15%;
+    border-radius: none;
+    background-color:#ffffff;
+}
+.navRight>div>img{
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10%;
 }
