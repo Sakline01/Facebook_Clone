@@ -3,7 +3,7 @@
 function App() {
   return (
     <div className="App">
-      <h1>Hello Redux</h1>
+      <h1>hello facebook</h1>
     </div>
   );
 }
