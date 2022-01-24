@@ -1,3 +1,4 @@
+/*~ nav style starts here */
 .nav{
     width:100%;
     height:56px;
@@ -6,6 +7,7 @@
     align-items: center;
     justify-content:space-around;
 }
+/* ~navbar's lft side style goes here*/
 .navLeft{
     width:20%;
     height:100%;
@@ -14,6 +16,7 @@
     justify-content: left;
     padding-left: 1%;
 }
+/* ~navbar's middle side's style starts from here */
 .navMiddle{
     width:60%;
     height:100%;
@@ -32,12 +35,16 @@
 .navIconColor{
     fill:gray;
 }
+
+/*~ navbar's icon's active style for all goes here */
+
 .navActiveIconColor{
-    fill:blue;
+    fill:#1876f2;
 }
+/*~ this active style is only for navbar's middle part */
 .active{
     height:90%;
-    border-bottom: 4px solid blue;
+    border-bottom: 4px solid #1876f2;
 }
 .navMiddle>div:hover{
     height:90%;
@@ -45,6 +52,9 @@
     background-color:#f0f2f5;
     border-radius: 5px;
 }
+/*
+~ navbar's right side's style goes here 
+*/
 .navRight{
     width:20%;
     height: 70%;
