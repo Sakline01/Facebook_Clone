@@ -13,7 +13,8 @@ const NavRight = () => {
     const handleClick = (activeOption) => {
         for (const key in isActiveObject) {
             if (key === activeOption) {
-                setIsActiveObject({ ...isActiveObject, [key]: true })
+                let flag = isActiveObject[key];
+                setIsActiveObject({ ...isActiveObject, [key]: !flag })
                 break;
             }
         }
