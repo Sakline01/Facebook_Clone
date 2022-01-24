@@ -1,11 +1,14 @@
 import React from 'react';
+import SimilarCard from './SimilarCard';
 
 const StoryCard = () => {
     return (
-        <div>
-            <h1>
-                hi from story card
-            </h1>
+        <div style={{ display: 'flex', gap: '9px', alignItems: 'center', justifyContent: 'center' }}>
+            <SimilarCard />
+            <SimilarCard />
+            <SimilarCard />
+            <SimilarCard />
+            <SimilarCard />
         </div>
     );
 };
